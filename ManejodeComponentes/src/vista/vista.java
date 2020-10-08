@@ -19,9 +19,11 @@ import modelo.modelo;
 public class vista extends JFrame{
     public JPanel panel;
     public JLabel label;
+    public JLabel label2;
     public JComboBox combo = new JComboBox();
     public JButton clear;
     public  JCheckBox rellenoJCheckBox; 
+    public  JButton blackBtn, blueBtn, redBtn, greenBtn,magentaBtn;
 //    public JCheckBox  sinrellenoJCheckBox; 
     
     public void show(modelo modelo){
@@ -47,10 +49,26 @@ public class vista extends JFrame{
      controls.add(rellenoJCheckBox);
      
      clear = new JButton("Limpiar");
-     controls.add(clear);
+      controls.add(clear);
+     
+     label2 = new JLabel("Colores: ");
+     controls.add(label2);
+     
+     blueBtn = new JButton("Azul");
+     blackBtn = new JButton("Negro");
+     redBtn = new JButton("Rojo");
+     greenBtn = new JButton("Verde");
+     magentaBtn = new JButton("Rosa");
+
+    
+     controls.add(blueBtn);
+     controls.add(blackBtn);
+     controls.add(greenBtn);
+     controls.add(redBtn);
+     controls.add(magentaBtn);
      
      content.add(controls,BorderLayout.NORTH);
-     frame.setSize(600,600);
+     frame.setSize(1000,600);
      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
      frame.setVisible(true);
     }

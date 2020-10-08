@@ -21,6 +21,7 @@ public class modelo extends JComponent{
     private Point inicioArrastre;
     private Point finArrastre;
     String rellenar;
+     Graphics2D g2;
     
     private ArrayList<Shape> rectangulos = new ArrayList<Shape>();
     private ArrayList<Shape> elipses = new ArrayList<Shape>();
@@ -72,10 +73,28 @@ public class modelo extends JComponent{
     }
     
     public void clear(Graphics g){
-     Graphics2D g2 = (Graphics2D) g;
+    
      g2.setPaint(Color.WHITE);
      g2.fillRect(0, 0, getSize().width, getSize().height);
      g2.setPaint(Color.black);
      repaint();
     }
+    public void azul(){
+     g2.setPaint(Color.blue);
+    }
+    
+    public void rojo(){
+    g2.setPaint(Color.RED);
+}
+    public void verde(){
+    g2.setPaint(Color.green);
+} 
+   
+     public void negro(){
+    g2.setPaint(Color.black);
+}
+      public void rosa(){
+    g2.setPaint(Color.magenta);
+}
+    
 }

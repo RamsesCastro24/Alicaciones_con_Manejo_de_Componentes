@@ -23,8 +23,13 @@ public class controlador implements ActionListener{
     public controlador(vista view, modelo model){
         this.vis = view;
         this.mod = model;
-//         this.vis.clear.setActionCommand("Limpiar");
-        this.vis.combo.addActionListener(this);
+         this.vis.clear.setActionCommand("Limpiar");
+           this.vis.greenBtn.setActionCommand("Verde");
+             this.vis.redBtn.setActionCommand("Rojo");
+               this.vis.blackBtn.setActionCommand("Negro");
+                 this.vis.blueBtn.setActionCommand("Azul");
+        this.vis.magentaBtn.setActionCommand("Rosa");
+                 this.vis.combo.addActionListener(this);
 //         this.view.saveJButton.addActionListener(this);
     
     }
@@ -38,16 +43,38 @@ public class controlador implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-//        Graphics g = null;
-//    String aux = e.getActionCommand();
+        Graphics g = null;
+    String aux = e.getActionCommand();
 //
-//        switch (aux) {
-//            case "Limpiar":
-//                mod.clear(g);
+        switch (aux) {
+            case "Limpiar":
+                mod.clear(g);
 //                
 //
-//                break;
-//        }
+                break;
+                case "Azul":
+                    mod.azul();
+                
+                break;
+                 case "Rojo":
+                    mod.rojo();
+                
+                break;
+                 case "Negro":
+                    mod.negro();
+                
+                break;
+                 case "Verde":
+                    mod.verde();
+                
+                break;
+                case "Rosa":
+                    mod.rosa();
+                
+                break;
+                
+                
+        }
         
 //          if (e.getSource()== vis.clear) {
 //    mod.clear();
