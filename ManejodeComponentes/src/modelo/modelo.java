@@ -56,7 +56,7 @@ public class modelo extends JComponent{
     
     public void paint(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
-        g2.setColor(Color.BLACK);
+        g2.setColor(Color.gray);
             for (Shape rectangulo : rectangulos) { // dibuja todos los rectangulos
                if(1==1){
                    g2.fill(rectangulo);

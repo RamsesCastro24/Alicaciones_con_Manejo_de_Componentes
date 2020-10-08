@@ -23,13 +23,13 @@ public class controlador implements ActionListener{
     public controlador(vista view, modelo model){
         this.vis = view;
         this.mod = model;
-         this.vis.clear.setActionCommand("Limpiar");
-           this.vis.greenBtn.setActionCommand("Verde");
-             this.vis.redBtn.setActionCommand("Rojo");
-               this.vis.blackBtn.setActionCommand("Negro");
-                 this.vis.blueBtn.setActionCommand("Azul");
-        this.vis.magentaBtn.setActionCommand("Rosa");
-                 this.vis.combo.addActionListener(this);
+//         this.vis.clear.setActionCommand("Limpiar");
+//           this.vis.greenBtn.setActionCommand("Verde");
+//             this.vis.redBtn.setActionCommand("Rojo");
+//               this.vis.blackBtn.setActionCommand("Negro");
+//                 this.vis.blueBtn.setActionCommand("Azul");
+//        this.vis.magentaBtn.setActionCommand("Rosa");
+//                 this.vis.combo.addActionListener(this);
 //         this.view.saveJButton.addActionListener(this);
     
     }
